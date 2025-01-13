@@ -59,6 +59,7 @@ Returns the number of elements in the stack.
 Clears the stack by deleting all nodes and freeing memory.
 
 - **Operation**: Iterates over the stack and deletes each node.
+- **Note**: After this change, the function does not return anything. It simply clears the stack, regardless of whether it was initially empty or not.
 
 #### 10. `bool contains(T value) const`
 Checks if a specific value is present in the stack.
@@ -93,6 +94,7 @@ Swaps the contents of the current stack with another stack.
 Converts the stack to an array of type `T`.
 
 - **Returns**: A pointer to a dynamically allocated array containing the elements of the stack.
+- **Note**: When using `toArray()`, it is important to remember that the array is dynamically allocated, but it is the caller's responsibility to free the memory after usage.
 
 ## Example Usage
 
